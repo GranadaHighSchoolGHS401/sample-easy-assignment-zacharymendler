@@ -6,10 +6,10 @@ public class MyClass
     //example 5,10,15......95,100
     public static void main(){
         Scanner sc = new Scanner(System.in);
-    int num1 = sc.nextInt();
-    for(int i=1;i<num1;i++){
+    int n = sc.nextInt();
+    for(int i=1;i<n;i++){
         System.out.print(i+",");
     }
-    System.out.print(num1);
+    System.out.print(n);
     }
 }
