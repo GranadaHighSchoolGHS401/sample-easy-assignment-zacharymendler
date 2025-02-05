@@ -19,14 +19,10 @@ jobs:
       with:
         test-name: Test1
         setup-command: ''
-        command: test
-        input: |-
-          3
-          9
-        expected-output: |-
-          1,2,3
-          1,2,3,4,5,6,7,8,9
-        comparison-method: exact
+        command: MyClass.java
+        input: '4'
+        expected-output: '1,2,3,4'
+        comparison-method: contains
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
